@@ -6,7 +6,7 @@ namespace GitHubOAuthClient
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("GitHub OAuth Client test started!");
         }
     }
 }
