@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubOAuthClient", "GitHubOAuthClient\GitHubOAuthClient.csproj", "{C8CA0CC0-6C05-44CA-BFBC-5DAE09FEA7DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitHubOAuthClient", "GitHubOAuthClient\GitHubOAuthClient.csproj", "{C8CA0CC0-6C05-44CA-BFBC-5DAE09FEA7DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthClientBase", "OAuthClientBase\OAuthClientBase.csproj", "{CBCFF9CB-1E5B-49DA-8DC9-62ADB206DB29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C8CA0CC0-6C05-44CA-BFBC-5DAE09FEA7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8CA0CC0-6C05-44CA-BFBC-5DAE09FEA7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8CA0CC0-6C05-44CA-BFBC-5DAE09FEA7DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBCFF9CB-1E5B-49DA-8DC9-62ADB206DB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCFF9CB-1E5B-49DA-8DC9-62ADB206DB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCFF9CB-1E5B-49DA-8DC9-62ADB206DB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCFF9CB-1E5B-49DA-8DC9-62ADB206DB29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
