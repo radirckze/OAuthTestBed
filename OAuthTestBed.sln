@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitHubOAuthClient", "GitHub
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthClientBase", "OAuthClientBase\OAuthClientBase.csproj", "{CBCFF9CB-1E5B-49DA-8DC9-62ADB206DB29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitLabOAuthClient", "GitLabOAuthClient\GitLabOAuthClient.csproj", "{97638BD7-B121-47E2-B592-3B05A6436C63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CBCFF9CB-1E5B-49DA-8DC9-62ADB206DB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBCFF9CB-1E5B-49DA-8DC9-62ADB206DB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBCFF9CB-1E5B-49DA-8DC9-62ADB206DB29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97638BD7-B121-47E2-B592-3B05A6436C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97638BD7-B121-47E2-B592-3B05A6436C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97638BD7-B121-47E2-B592-3B05A6436C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97638BD7-B121-47E2-B592-3B05A6436C63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
