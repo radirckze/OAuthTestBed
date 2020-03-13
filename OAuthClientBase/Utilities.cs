@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -34,6 +35,29 @@ namespace OAuthClientBase
                 }
             }
             return inputStr.ToString(); ;
+        }
+
+        public static async Task<HttpResponseMessage> PWCredentialFlow(string url, string username, string password)
+        {
+            try
+            {
+                
+                using (HttpClient client = new HttpClient())
+                {
+                    string pwcUrl = ConstructPWCredentialUrl(url, username, password);
+                    HttpResponseMessage response = await client.PostAsync(url, null);
+                    return response;
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        private static string ConstructPWCredentialUrl(string url, string username, string password)
+        {
+            return (String.Format("{0}?grant_type=password&username={1}&password={2}", url, username, password));
         }
     }
 }

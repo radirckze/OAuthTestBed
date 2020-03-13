@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 using OAuthClientBase;
 
@@ -8,16 +10,25 @@ namespace GitLabOAuthClient
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string GitLabAuthUrl = "https://gitlab.helpsystems.com/oauth/token";
 
-            Console.WriteLine("Type any text and <enter> to terminate:");
-            string inputStr = string.Empty;
-            do
+            Console.WriteLine("GitLab Auth application");
+
+            Console.WriteLine("Testing password credential flow");
+            Console.Write("Username:");
+            string username = Utilities.MaskedRead();
+            Console.WriteLine();
+            Console.Write("Password:");
+            string password = Utilities.MaskedRead();
+
+            HttpResponseMessage response = Utilities.PWCredentialFlow(GitLabAuthUrl, username, password).Result;
+
+
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                inputStr = Utilities.MaskedRead();
-                Console.WriteLine(String.Format("The input string is {0}", inputStr));
+                //get heading
+
             }
-            while (inputStr != null && inputStr.Length > 1);
 
 
         }
