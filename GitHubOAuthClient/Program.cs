@@ -271,8 +271,9 @@ namespace GitHubOAuthClient
 
         public static string GetAccessCodeFromResponseBody(HttpResponseMessage response)
         {
-            //sample content: access_token=c482858adb39d27e2ea8810fe328de8716ae8137&scope=repo&token_type=bearer
-            string accessCode = null;
+            //sample content: access_token=<the-oauth-token>&scope=repo&token_type=bearer
+
+            string accessCode = null; 
             string messageContent = response.Content.ReadAsStringAsync().Result;
             string[] parts = messageContent.Split('&');
             if (parts != null && parts.Length>0)
