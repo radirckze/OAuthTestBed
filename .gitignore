@@ -6,6 +6,8 @@
 #Soluton and Project specifi
 *.hidden
 secrets.hidden
+*.config
+App.config
 
 # User-specific files
 *.suo
